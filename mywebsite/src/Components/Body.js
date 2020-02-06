@@ -9,7 +9,7 @@ function Body() {
       <ScrollableAnchor id={"top"}>
         <section id="title">
           <h1>
-            <Badge variant="light">Jaryd Fisher</Badge>
+            <Badge id="badge" variant="light">Jaryd Fisher</Badge>
           </h1>
           <div id="image"></div>
         </section>

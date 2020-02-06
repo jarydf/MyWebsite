@@ -31,22 +31,32 @@ li a:hover {
 /*section */
 section {
   height: 100vh;
-  padding-top: 10vh;
 }
+
 h1{
   text-align: center;
-  padding-top: 20vh;
   color:#111111;
+  padding-top: 30vh;
 }
+
+#badge{
+  font-size: 10vh;
+}
+
 #title{
   background-image: url(./images/Background.jpg);
   background-size: cover;
 }
 h2{
-  color: #111111;;
+  color: #111111;
+  padding-top: 15vh;
+  text-align: center;
+  
 }
 #linkedin{
   margin: 0.5vh;
-  float: right;
   margin-right: 5vh;
+}
+.navbar-right{
+  float: right;
 }
