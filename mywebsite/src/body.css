@@ -1,0 +1,143 @@
+#badge {
+  font-size: 10vh;
+}
+#title {
+  background-image: url(./images/Background.jpg);
+  background-size: cover;
+}
+h2 {
+  text-align: center;
+  color: #111111;
+  padding-top: 2vh;
+}
+#profile-img {
+  height: 100%;
+  width: 60vh;
+  padding: 0;
+  z-index: 0;
+  border: 1px solid #111111;
+}
+#about-section {
+  background-color: #dcdcdc;
+  display: "grid";
+  grid-template-columns: "repeat(3, 1fr)";
+  grid-gap: 20;
+  padding-right: 0;
+  display: table-cell;
+}
+#about-container {
+  height: 100%;
+  padding-right: 0;
+  padding-left: 0;
+  margin-left: 0;
+  margin-right: 0;
+  padding-top: 7vh;
+}
+#row {
+  height: 100%;
+  width: 100%;
+  margin-right: 0;
+}
+#col-story {
+  font-size: 3vh;
+}
+#col-skills {
+  font-size: 3vh;
+}
+#col-skillsbar {
+  padding-top: 20vh;
+}
+
+#projects {
+  background-color: #dcdcdc;
+  padding-top: 5vh;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+#project-table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #111111;
+  margin: 0;
+  height: 90%;
+  padding: 0;
+}
+#project-td {
+  padding: 0;
+  margin: 0; 
+}
+.img-fluid{
+  padding:0; 
+  border-width:0; 
+  margin:0;
+}
+
+
+.container {
+  width: 50%;
+  margin: 0 auto;
+}
+@keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-webkit-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-moz-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+@-o-keyframes load {
+  from {
+    width: 0%;
+  }
+}
+
+.bar {
+  background-color: #eee;
+  padding: 2px;
+  border-radius: 15px;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #fff;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+.bar::before {
+  content: attr(data-skill);
+  background-color: #f3b0ff;
+  display: inline-block;
+  padding: 5px 0 5px 10px;
+  border-radius: inherit;
+  animation: load 2s 0s;
+  -webkit-animation: load 2s 0s;
+  -moz-animation: load 2s 0s;
+  -o-animation: load 2s 0s;
+}
+
+.bar.front::before {
+  background-color: red;
+  width: calc(100% - 20px);
+}
+#php::before {
+  background-color: purple;
+  width: calc(80% - 10px);
+}
+
+#html::before {
+  background-color: yellow;
+  width: calc(80% - 10px);
+}
+#python::before {
+  background-color: blue;
+  width: calc(60% - 10px);
+}
+#react::before {
+  background-color: lightblue;
+  width: calc(40% - 10px);
+}

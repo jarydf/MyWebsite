@@ -1,7 +1,8 @@
 import React from "react";
 import "./../App.css";
+import "./../header.css";
 import { SocialIcon } from "react-social-icons";
-import pdf from './../resume.pdf';
+import pdf from "./../resume.pdf";
 
 function Header() {
   return (
@@ -11,14 +12,15 @@ function Header() {
           <a href="#title">Jaryd Fisher </a>
         </li>
         <li>
-          <a href="#aboutMe">About Me </a>
-        </li>
-        <li>
-          <a href="#skills">Skills</a>
+          <a href="#about-section">About Me </a>
         </li>
         <li>
           <a href="#projects">Projects</a>
         </li>
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+
         <li className="navbar-right">
           <SocialIcon
             id="linkedin"
@@ -26,7 +28,9 @@ function Header() {
           />
         </li>
         <li className="navbar-right">
-        <a href={pdf} download="resume.pdf">Click to download manifest</a>  
+          <a href={pdf} download="resume.pdf">
+            Resume
+          </a>
         </li>
       </ul>
     </div>

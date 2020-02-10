@@ -1,62 +1,7 @@
 .App {
   text-align: center;
+  scroll-behavior: smooth;
 }
-/* for nav bar*/
-ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background-color: #333333;
-  position:fixed;
-  width: 100vw!important;
-  
-}
-
-li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #111111;
-}
-/*section */
 section {
   height: 100vh;
-}
-
-h1{
-  text-align: center;
-  color:#111111;
-  padding-top: 30vh;
-}
-
-#badge{
-  font-size: 10vh;
-}
-
-#title{
-  background-image: url(./images/Background.jpg);
-  background-size: cover;
-}
-h2{
-  color: #111111;
-  padding-top: 15vh;
-  text-align: center;
-  
-}
-#linkedin{
-  margin: 0.5vh;
-  margin-right: 5vh;
-}
-.navbar-right{
-  float: right;
 }
