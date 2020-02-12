@@ -9,6 +9,7 @@ import Col from "react-bootstrap/Col";
 import LogoPHP from "./../php.png";
 import LogoPython from "./../python.png";
 import { MDBMask, MDBView } from "mdbreact";
+import Contact from './Contact';
 
 function Body() {
   return (
@@ -66,7 +67,11 @@ function Body() {
             </Col>
             <Col id="col-skillsbar">
               <div className="container">
-                <div className="bar front expert" id="java" data-skill="Java"></div>
+                <div
+                  className="bar front expert"
+                  id="java"
+                  data-skill="Java"
+                ></div>
                 <div
                   className="bar front advanced"
                   id="javascript"
@@ -82,9 +87,16 @@ function Body() {
                   id="html"
                   data-skill="HTML/CSS/SQL"
                 ></div>
-                <div className="bar learning" id="python" data-skill="Python"></div>
-                <div className="bar learning" id="react" data-skill="React"></div>
-                <div></div>
+                <div
+                  className="bar learning"
+                  id="python"
+                  data-skill="Python"
+                ></div>
+                <div
+                  className="bar learning"
+                  id="react"
+                  data-skill="React"
+                ></div>
               </div>
             </Col>
           </Row>
@@ -92,42 +104,43 @@ function Body() {
       </section>
       <section id="projects">
         <h2>Projects</h2>
-        <table id="project-table">
-        <tbody>
-          <tr>
-            <td id="project-td">
-              <MDBView hover zoom>
-                <img src={LogoPHP} alt="python logo" className="img-fluid" />
-                <MDBMask overlay="red-slight"></MDBMask>
-              </MDBView>
-            </td>
-            <td>
-              <MDBView hover zoom>
-                <img src={LogoPHP} alt="python logo" className="img-fluid" />
-                <MDBMask overlay="red-slight"></MDBMask>
-              </MDBView>
-            </td>
-          </tr>
-          <tr>
-            <td>
-              <MDBView hover zoom>
-                <img src={LogoPHP} alt="python logo" className="img-fluid" />
-                <MDBMask overlay="red-slight"></MDBMask>
-              </MDBView>
-            </td>
-            <td>
-              <MDBView hover zoom>
-                <img src={LogoPython} alt="python logo" className="img-fluid" />
-                <MDBMask overlay="red-slight"></MDBMask>
-              </MDBView>
-            </td>
-          </tr>
-          </tbody>
-        </table>
-      </section>
 
+        <div className="project-overlay">
+          <MDBView hover zoom>
+          <h3>Project-Offwhite</h3>
+            <img src={LogoPHP} alt="python logo" className="project-img"/>
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
+
+        <div className="project-overlay">
+          <MDBView hover zoom>
+          <h3>Analog Gauge Reader</h3>
+          <img src={LogoPython} alt="python logo" className="project-img"/>
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
+
+        <div className="project-overlay">
+          <MDBView hover zoom>
+          <h3>Mapping For A Change</h3>
+            <img src={LogoPHP} alt="python logo" className="project-img" />
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
+
+        <div className="project-overlay">
+          <MDBView hover zoom>
+          <h3>N/A</h3>
+            <img src={LogoPython} alt="python logo" className="project-img"/>
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
+
+      </section>
       <section id="contact">
-        <h2>Contact</h2>
+      <h2>Contact Information</h2>
+      <Contact/>
       </section>
     </div>
   );
