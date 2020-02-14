@@ -1,8 +1,8 @@
 import React from "react";
-import "./../App.css";
-import "./../header.css";
+import "./../css/App.css";
+import "./../css/header.css";
 import { SocialIcon } from "react-social-icons";
-import pdf from "./../resume.pdf";
+import pdf from "./../images/resume.pdf";
 
 function Header() {
   return (

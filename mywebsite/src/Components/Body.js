@@ -1,14 +1,14 @@
 import React from "react";
-import "./../App.css";
-import "./../body.css";
+import "./../css/App.css";
+import "./../css/body.css";
 import Badge from "react-bootstrap/Badge";
-import profile from "./../profile.png";
+import profile from "./../images/profile.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import LogoPHP from "./../php.png";
-import LogoPython from "./../python.png";
-import LogoJava from "./../java.jpg";
+import LogoPHP from "./../images/php.png";
+import LogoPython from "./../images/python.png";
+import LogoJava from "./../images/java.jpg";
 import { MDBMask, MDBView } from "mdbreact";
 import Contact from './Contact';
 

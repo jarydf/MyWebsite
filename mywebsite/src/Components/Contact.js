@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
-import "./../contact.css";
+import "./../css/contact.css";
 
 function Contact(props) {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
