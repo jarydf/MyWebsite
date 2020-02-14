@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "./../contact.css";
 
 function Contact(props) {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
@@ -22,8 +23,8 @@ function Contact(props) {
 
   return (
     <div className="container">
-      <form onSubmit={handleSubmit}>
-        <div className="input-field">
+      <form id="contact-form" onSubmit={handleSubmit}>
+        <div>
           <label htmlFor="name">Name</label>
           <input
             type="text"
@@ -33,7 +34,7 @@ function Contact(props) {
             required
           />
         </div>
-        <div className="input-field">
+        <div>
           <label htmlFor="email">Email address</label>
           <input
             type="email"
@@ -43,7 +44,7 @@ function Contact(props) {
             required
           />
         </div>
-        <div className="input-field">
+        <div>
           <label htmlFor="message">Message</label>
           <textarea
             rows="5"
@@ -53,10 +54,8 @@ function Contact(props) {
             required
           />
         </div>
-        <div className="input-field">
-          <button className="btn blue darken-3" type="submit">
-            Sign Up
-          </button>
+        <div>
+          <button type="submit">Send Message</button>
         </div>
       </form>
     </div>

@@ -8,6 +8,7 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import LogoPHP from "./../php.png";
 import LogoPython from "./../python.png";
+import LogoJava from "./../java.jpg";
 import { MDBMask, MDBView } from "mdbreact";
 import Contact from './Contact';
 
@@ -107,23 +108,7 @@ function Body() {
 
         <div className="project-overlay">
           <MDBView hover zoom>
-          <h3>Project-Offwhite</h3>
-            <img src={LogoPHP} alt="python logo" className="project-img"/>
-            <MDBMask overlay="red-slight"></MDBMask>
-          </MDBView>
-        </div>
-
-        <div className="project-overlay">
-          <MDBView hover zoom>
-          <h3>Analog Gauge Reader</h3>
-          <img src={LogoPython} alt="python logo" className="project-img"/>
-            <MDBMask overlay="red-slight"></MDBMask>
-          </MDBView>
-        </div>
-
-        <div className="project-overlay">
-          <MDBView hover zoom>
-          <h3>Mapping For A Change</h3>
+            <h3>Project-Offwhite</h3>
             <img src={LogoPHP} alt="python logo" className="project-img" />
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
@@ -131,16 +116,31 @@ function Body() {
 
         <div className="project-overlay">
           <MDBView hover zoom>
-          <h3>N/A</h3>
-            <img src={LogoPython} alt="python logo" className="project-img"/>
+            <h3>Analog Gauge Reader</h3>
+            <img src={LogoPython} alt="python logo" className="project-img" />
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
 
+        <div className="project-overlay">
+          <MDBView hover zoom>
+            <h3>Mapping For A Change</h3>
+            <img src={LogoPHP} alt="python logo" className="project-img" />
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
+
+        <div className="project-overlay">
+          <MDBView hover zoom>
+            <h3>Created Java Local Server</h3>
+            <img src={LogoJava} alt="java logo" className="project-img" width="75%" height="75%"   />
+            <MDBMask overlay="red-slight"></MDBMask>
+          </MDBView>
+        </div>
       </section>
       <section id="contact">
-      <h2>Contact Information</h2>
-      <Contact/>
+        <h2>Contact Information</h2>
+        <Contact />
       </section>
     </div>
   );

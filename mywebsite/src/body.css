@@ -46,7 +46,7 @@ h2 {
 
 #projects {
   background-color: #dcdcdc;
-  padding-top: 5vh;
+  padding-top: 7vh;
   margin: 0 auto;
 }
 .project-overlay {
@@ -98,26 +98,6 @@ input[type=submit]:hover {
   width: 50%;
   margin: 0 auto;
 }
-@keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-webkit-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-moz-keyframes load {
-  from {
-    width: 0%;
-  }
-}
-@-o-keyframes load {
-  from {
-    width: 0%;
-  }
-}
 
 .bar {
   background-color: #eee;
@@ -135,10 +115,7 @@ input[type=submit]:hover {
   display: inline-block;
   padding: 5px 0 5px 10px;
   border-radius: inherit;
-  animation: load 2s 0s;
-  -webkit-animation: load 2s 0s;
-  -moz-animation: load 2s 0s;
-  -o-animation: load 2s 0s;
+
 }
 
 .bar.front::before {
@@ -161,4 +138,8 @@ input[type=submit]:hover {
 #react::before {
   background-color: lightblue;
   width: calc(40% - 10px);
+}
+#contact{
+  padding-top: 12vh;
+  background-color: #dcdcdc
 }
