@@ -10,7 +10,7 @@ import LogoPHP from "./../images/php.png";
 import LogoPython from "./../images/python.png";
 import LogoJava from "./../images/java.jpg";
 import { MDBMask, MDBView } from "mdbreact";
-import Contact from './Contact';
+import Contact from "./Contact";
 
 function Body() {
   return (
@@ -32,6 +32,7 @@ function Body() {
           <Row id="row">
             <Col id="col-img">
               <img src={profile} alt="profile-img" id="profile-img" />
+             <div> Email: jaryd_fisher@hotmail.com<br/>(250) 938-3632</div>
             </Col>
             <Col id="col-story">
               <h2 id="about-title">About me</h2>I am a recently graduated
@@ -133,7 +134,13 @@ function Body() {
         <div className="project-overlay">
           <MDBView hover zoom>
             <h3>Created Java Local Server</h3>
-            <img src={LogoJava} alt="java logo" className="project-img" width="75%" height="75%"   />
+            <img
+              src={LogoJava}
+              alt="java logo"
+              className="project-img"
+              width="75%"
+              height="75%"
+            />
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>

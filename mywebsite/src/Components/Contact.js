@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import axios from "axios";
+import Axios from "axios";
 import "./../css/contact.css";
 
 function Contact(props) {
@@ -9,16 +9,17 @@ function Contact(props) {
     setContact({ ...contact, [event.target.name]: event.target.value });
   };
 
-  const handleSubmit = e => {
-    e.preventDefault();
-    axios
-      .post("http://localhost:3002/send", contact)
-      .then(function(response) {
-        console.log(response);
-      })
-      .catch(function(error) {
-        console.log(error);
-      });
+  const handleSubmit = event => {
+    event.preventDefault();
+
+    const data = { contact };
+
+    Axios.post(
+      "https://us-central1-mywebsite-57f7f.cloudfunctions.net/submit",
+      data
+    ).catch(error => {
+      console.log(error);
+    });
   };
 
   return (
