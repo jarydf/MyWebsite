@@ -6,9 +6,9 @@ import profile from "./../images/profile.png";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import LogoPHP from "./../images/php.png";
-import LogoPython from "./../images/python.png";
-import LogoJava from "./../images/java.jpg";
+// import LogoPHP from "./../images/php.png";
+// import LogoPython from "./../images/python.png";
+// import LogoJava from "./../images/java.jpg";
 import { MDBMask, MDBView } from "mdbreact";
 import Contact from "./Contact";
 
@@ -32,7 +32,12 @@ function Body() {
           <Row id="row">
             <Col id="col-img">
               <img src={profile} alt="profile-img" id="profile-img" />
-             <div> Email: jaryd_fisher@hotmail.com<br/>(250) 938-3632</div>
+              <div>
+                {" "}
+                Email: jaryd_fisher@hotmail.com
+                <br />
+                (250) 938-3632
+              </div>
             </Col>
             <Col id="col-story">
               <h2 id="about-title">About me</h2>I am a recently graduated
@@ -104,13 +109,14 @@ function Body() {
           </Row>
         </Container>
       </section>
+
       <section id="projects">
         <h2>Projects</h2>
 
         <div className="project-overlay">
           <MDBView hover zoom>
             <h3>Project-Offwhite</h3>
-            <img src={LogoPHP} alt="python logo" className="project-img" />
+
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
@@ -118,7 +124,7 @@ function Body() {
         <div className="project-overlay">
           <MDBView hover zoom>
             <h3>Analog Gauge Reader</h3>
-            <img src={LogoPython} alt="python logo" className="project-img" />
+
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
@@ -126,7 +132,7 @@ function Body() {
         <div className="project-overlay">
           <MDBView hover zoom>
             <h3>Mapping For A Change</h3>
-            <img src={LogoPHP} alt="python logo" className="project-img" />
+
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
@@ -134,13 +140,7 @@ function Body() {
         <div className="project-overlay">
           <MDBView hover zoom>
             <h3>Created Java Local Server</h3>
-            <img
-              src={LogoJava}
-              alt="java logo"
-              className="project-img"
-              width="75%"
-              height="75%"
-            />
+
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>

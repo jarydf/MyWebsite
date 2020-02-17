@@ -34,12 +34,15 @@ h2 {
 }
 #col-story {
   font-size: 3vh;
+  width: 100vw;
 }
 #col-skills {
   font-size: 3vh;
+  width: 100vw;
 }
 #col-skillsbar {
   padding-top: 20vh;
+  width: 100vw;
 }
 
 #projects {
@@ -48,7 +51,7 @@ h2 {
   margin: 0 auto;
 }
 .project-overlay {
-  width: 50%;
+  width: 50vw;
   height: 40vh;
   border: 1px solid black;
   float: left;
@@ -65,8 +68,8 @@ h3 {
   text-align: center;
 }
 .project-img {
-  padding-left: 18vw;
-  padding-top: 8vh;
+  padding-left: 15vw;
+  padding-top: 5vh;
 }
 input[type=text], select, textarea {
   width: 100%; /* Full width */
