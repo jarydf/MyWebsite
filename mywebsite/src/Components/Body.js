@@ -33,10 +33,7 @@ function Body() {
             <Col id="col-img">
               <img src={profile} alt="profile-img" id="profile-img" />
               <div>
-                {" "}
-                Email: jaryd_fisher@hotmail.com
-                <br />
-                (250) 938-3632
+
               </div>
             </Col>
             <Col id="col-story">
@@ -113,40 +110,56 @@ function Body() {
       <section id="projects">
         <h2>Projects</h2>
 
-        <div className="project-overlay">
+        <div className="project-overlay" id="project-off-white">
           <MDBView hover zoom>
-            <h3>Project-Offwhite</h3>
+            <h3>
+              <Badge variant="light" className="project-title">
+                TrapBuzz
+              </Badge>
+            </h3>
 
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
 
-        <div className="project-overlay">
+        <div className="project-overlay" id="agr">
           <MDBView hover zoom>
-            <h3>Analog Gauge Reader</h3>
+            <h3>
+              <Badge variant="info" className="project-title">
+                Analog Gauge Reader
+              </Badge>
+            </h3>
 
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
 
-        <div className="project-overlay">
+        <div className="project-overlay" id="mfc">
           <MDBView hover zoom>
-            <h3>Mapping For A Change</h3>
+            <h3>
+              <Badge variant="danger" className="project-title">
+                Mapping For A Change
+              </Badge>
+            </h3>
 
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
 
-        <div className="project-overlay">
+        <div className="project-overlay" id="java">
           <MDBView hover zoom>
-            <h3>Created Java Local Server</h3>
+            <h3>
+              <Badge variant="primary" className="project-title">
+                Project In Progress
+              </Badge>
+            </h3>
 
             <MDBMask overlay="red-slight"></MDBMask>
           </MDBView>
         </div>
       </section>
       <section id="contact">
-        <h2>Contact Information</h2>
+        <h2>Contact Me</h2>
         <Contact />
       </section>
     </div>

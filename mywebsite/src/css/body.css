@@ -1,5 +1,5 @@
 #badge {
-  font-size: 10vh;
+  font-size: 5vw;
 }
 #title {
   background-image: url(./../images/Background.jpg);
@@ -11,11 +11,11 @@ h2 {
   padding-top: 2vh;
 }
 #profile-img {
-  height: 60vh;
-  width: 60vh;
+  height: 45vh;
+  width: 20vw;
   padding: 0;
   z-index: 0;
-  border: 1px solid #111111;
+  border-radius: 50%;
 }
 #about-section {
   background-color: #dcdcdc;
@@ -25,19 +25,23 @@ h2 {
   word-break: break-word;
   overflow: hidden;
 }
+
+@media (min-width: 400px) {
+  #about-container {
+    font-size: 1.5vw;
+  }
+}
 #about-container {
-  height: 100%;
-  padding-top: 7vh;
+  padding-top: 9vh;
 }
 #col-img{
-  border: 1px solid #111111;
+  border: 1px solid #848484;
+  width: 100vw;
 }
 #col-story {
-  font-size: 3vh;
   width: 100vw;
 }
 #col-skills {
-  font-size: 3vh;
   width: 100vw;
 }
 #col-skillsbar {
@@ -57,15 +61,28 @@ h2 {
   float: left;
   padding: 0 auto;
   margin: 0 auto;
-  background-color: #111111;
+  
+}
+#agr{
+  background-image: url(./../images/agr.png);
+  background-size: cover;
+}
+#mfc{
+  background-image: url(./../images/mfc.png);
+  background-size: cover;
+}
+#project-off-white{
+  background-image: url(./../images/blog.png);
+  background-size: cover;
 }
 .view.overlay.zoom {
   height: 100%;
   margin: 0 auto;
 }
 h3 {
-  color: #dcdcdc;
+  padding-top: 12vh;
   text-align: center;
+  font-size: 4vw !important;
 }
 .project-img {
   padding-left: 15vw;
