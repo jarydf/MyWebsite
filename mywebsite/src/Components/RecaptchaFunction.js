@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Recaptcha(){
+function RecaptchaFunction(){
 var Recaptcha = require('react-recaptcha');
  
 // specifying your onload callback function
@@ -17,7 +17,7 @@ var verifyCallback = function (response) {
   return (
     <div className="recaptcha">
       <Recaptcha
-        sitekey="6Lc6fdkUAAAAAIztBqxPbmiAH_tVtbVc8agF7syi"
+        sitekey="6Leme9kUAAAAAOjN1HuM2j6lX4DcLJyZAUmIl6wY"
         render="explicit"
         verifyCallback={verifyCallback}
         onloadCallback={callback}
@@ -27,4 +27,4 @@ var verifyCallback = function (response) {
   );
 }
 
-export default Recaptcha;
+export default RecaptchaFunction;

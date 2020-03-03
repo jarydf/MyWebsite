@@ -2,7 +2,7 @@ import React from "react";
 import "./../css/App.css";
 import "./../css/header.css";
 import { SocialIcon } from "react-social-icons";
-import pdf from "./../images/resume.pdf";
+import pdf from "./../images/Resume.pdf";
 
 function Header() {
   return (
@@ -28,7 +28,7 @@ function Header() {
           />
         </li>
         <li className="navbar-right">
-          <a href={pdf} download="resume.pdf">
+          <a href={pdf} download="Resume.pdf">
             Resume
           </a>
         </li>

@@ -10,12 +10,13 @@ h2 {
   color: #111111;
   padding-top: 2vh;
 }
+#div-profile-img{
+  padding-left: 5vw;
+  padding-top: 3vh;
+}
 #profile-img {
   height: 45vh;
-  width: 20vw;
-  padding: 0;
-  z-index: 0;
-  border-radius: 50%;
+  width: 40vw;
 }
 #about-section {
   background-color: #dcdcdc;
@@ -32,21 +33,15 @@ h2 {
   }
 }
 #about-container {
-  padding-top: 9vh;
+  padding-top: 7vh;
 }
-#col-img{
-  border: 1px solid #848484;
-  width: 100vw;
-}
+
 #col-story {
   width: 100vw;
 }
 #col-skills {
   width: 100vw;
-}
-#col-skillsbar {
-  padding-top: 20vh;
-  width: 100vw;
+  padding-right: 3vw;
 }
 
 #projects {
@@ -62,6 +57,9 @@ h2 {
   padding: 0 auto;
   margin: 0 auto;
   
+}
+.project-title{
+  z-index: 1;
 }
 #agr{
   background-image: url(./../images/agr.png);
@@ -112,9 +110,13 @@ input[type=submit]:hover {
   background-color: #45a049;
 }
 
-.container {
+.container-contact {
   width: 50%;
   margin: 0 auto;
+}
+.container-skills{
+  margin: 0 auto;
+  padding-top: 3vh;
 }
 
 .bar {
@@ -158,6 +160,7 @@ input[type=submit]:hover {
   width: calc(40% - 10px);
 }
 #contact{
-  padding-top: 10vh;
-  background-color: #dcdcdc
+  padding-top: 8vh;
+  background-color: #dcdcdc;
+  height: 120vh;
 }

@@ -25,16 +25,7 @@
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
   <title>jaryd's website</title>
-  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
-    <script type="text/javascript">
-    function dataCallback(response) {
-        console.log("dataCallback", response)
-        window.location.href = "/checkRecaptcha?response=" + encodeURIComponent(response)
-    }
-    function dataExpiredCallback() {
-        console.log("dataExpiredCallback")
-    }
-    </script>
+  <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script> 
 </head>
 
 <body>
@@ -59,6 +50,8 @@
 <script>
   // Your web app's Firebase configuration
   var firebaseConfig = {
+    //localhost
+    //apiKey: "AIzaSyAJ4ptBiJcFjuNDIOqw9geteml3_RwVkKo",
     apiKey: "AIzaSyAJ4ptBiJcFjuNDIOqw9geteml3_RwVkKo",
     authDomain: "mywebsite-57f7f.firebaseapp.com",
     databaseURL: "https://mywebsite-57f7f.firebaseio.com",

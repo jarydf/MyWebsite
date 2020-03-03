@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Axios from "axios";
 import "./../css/contact.css";
-import Recaptcha from './Recaptcha';
+import RecaptchaFunction from './RecaptchaFunction';
 
 function Contact(props) {
   const [contact, setContact] = useState({ name: "", email: "", message: "" });
@@ -11,17 +11,19 @@ function Contact(props) {
   };
 
   const handleSubmit = event => {
-    var recaptcha = document.getElementById("g-recaptcha-response").value;
+    let recaptcha = document.getElementById("g-recaptcha-response").value;
     if (recaptcha === "") {
       event.preventDefault();
       alert("Please check the recaptcha");
     }
     else{
     event.preventDefault();
+    
     const data = { contact };
     document.getElementById("email").value = "";
     document.getElementById("message").value = "";
     document.getElementById("name").value = "";
+    
     alert("Message Sent");
     Axios.post(
       "https://us-central1-mywebsite-57f7f.cloudfunctions.net/submit",
@@ -36,8 +38,9 @@ function Contact(props) {
     }
   };
 
+
   return (
-    <div className="container">
+    <div className="container-contact">
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>
@@ -71,7 +74,7 @@ function Contact(props) {
             onChange={handleChange}
             required
           />
-          <Recaptcha />
+          <RecaptchaFunction />
         </div>
         <div>
           <button type="submit">Send Message</button>

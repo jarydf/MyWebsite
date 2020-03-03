@@ -1,4 +1,4 @@
-ul {
+header ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -10,11 +10,11 @@ ul {
     
   }
   
-  li {
+  header li {
     float: left;
   }
   
-  li a {
+  header li a {
     display: block;
     color: white;
     text-align: center;
@@ -22,7 +22,7 @@ ul {
     text-decoration: none;
   }
   
-  li a:hover {
+  header li a:hover {
     background-color: #111111;
   }
   h1{
