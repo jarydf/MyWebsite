@@ -10,14 +10,7 @@ h2 {
   color: #111111;
   padding-top: 2vh;
 }
-#div-profile-img{
-  padding-left: 5vw;
-  padding-top: 3vh;
-}
-#profile-img {
-  height: 45vh;
-  width: 40vw;
-}
+
 #about-section {
   background-color: #dcdcdc;
   display: "grid";
@@ -25,6 +18,16 @@ h2 {
   grid-gap: 20;
   word-break: break-word;
   overflow: hidden;
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+#div-profile-img {
+  padding-left: 3vw;
+  padding-top: 3vh;
+}
+#profile-img {
+  height: 45vh;
+  width: 40vw;
 }
 
 @media (min-width: 400px) {
@@ -48,9 +51,11 @@ h2 {
   background-color: #dcdcdc;
   padding-top: 7vh;
   margin: 0 auto;
+  padding-left: 2vw;
+  padding-right: 2vw;
 }
 .project-overlay {
-  width: 50vw;
+  width: 46vw;
   height: 40vh;
   border: 1px solid black;
   float: left;

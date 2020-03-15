@@ -7,7 +7,7 @@ header ul {
     position:fixed;
     width: 100vw!important;
     z-index: 1;
-    
+    font-size: 1.25vw;
   }
   
   header li {
