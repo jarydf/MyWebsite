@@ -47,6 +47,7 @@
    min-width: 10vw;
    max-height: 90vh;
    min-height: 30vh;
+   transition: height 0.66s ease-out;
 }
 .skills-description{
   font-size: 3vmin;
