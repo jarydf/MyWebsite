@@ -1,5 +1,4 @@
 import React from "react";
-import "./../css/App.css";
 import "./../css/body.css";
 import Badge from "react-bootstrap/Badge";
 import profile from "./../images/Portfolio.jpg";
@@ -20,21 +19,17 @@ function Body() {
         <div id="image"></div>
       </section>
       <section id="about-section" className="section_padding">
-        <div className="container" id="about-container">
-          <div className="single_about">
+        <div className="container">
             <div className="row">
               <div className="col-md-5 col-sm-5 col-xs-12">
-                <div className="about_image">
                   <img
                     src={profile}
                     className="img-responsive"
                     alt="about section"
                   />
-                </div>
               </div>
 
               <div className="col-md-7 col-sm-7 col-xs-12">
-                <div className="about_content_area" id="skills-right">
                   <h2>About Me</h2>
                   <h5>
                     I'm Professional web Developer having 10 Years Of
@@ -57,54 +52,42 @@ function Body() {
                     I have great communication skills, as I know they are
                     important to have when it comes to working with clients.
                   </p>
-                  <div className="about_details">
                     <div className="row">
                       <div className="col-md-6">
-                        <div className="ct_about">
                           <span>
                             <i className="fa fa-map-marker"></i> Location{" "}
                           </span>
                           : Vancouver, BC
-                        </div>
                       </div>
 
                       <div className="col-md-6">
-                        <div className="ct_about">
                           <span>
                             <i className="fa fa-calendar"></i> age{" "}
                           </span>
                           : 22
-                        </div>
                       </div>
 
                       <div className="col-md-6">
-                        <div className="ct_about">
                           <span>
                             <i className="fa fa-phone"></i> Phone{" "}
                           </span>
                           : +1-250-938-3632
-                        </div>
                       </div>
 
                       <div className="col-md-6">
-                        <div className="ct_about">
                           <span>
                             <i className="fa fa-envelope"></i> Email{" "}
                           </span>
                           : jaryd_fisher@hotmail.com
-                        </div>
                       </div>
                     </div>
-                  </div>
-                </div>
               </div>
             </div>
-          </div>
         </div>
       </section>
       <section id="skills" className="section-padding">
-        <div className="container" id="skills-container">
-          <div className="row justify-content-between">
+        <div className="container">
+          <div className="row">
             <div className="col-lg-7">
               <h2>My Skills</h2>
               <div className="skills-description">
@@ -113,7 +96,6 @@ function Body() {
                   versed I am with them. Keep in mind this is only a short glimpse
                   of what I can do.
                 </p>
-                <div className="skill-part">
                   <div className="skill">
                     <h4 className="progress-title">Java</h4>
                     <div className="progress">
@@ -198,7 +180,6 @@ function Body() {
                       </div>
                     </div>
                   </div>
-                </div>
 
                 <div className="about-cv-btn">
                   {" "}

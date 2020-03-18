@@ -40,7 +40,7 @@ function Contact(props) {
 
 
   return (
-    <div className="container-contact">
+    <div id="container-contact">
       <form id="contact-form" onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Name</label>

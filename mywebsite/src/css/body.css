@@ -9,8 +9,6 @@
 #about-section {
   padding-top: 8vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 100%;  
   overflow: auto;
 }
@@ -25,29 +23,17 @@
 #skills{
   padding-top: 8vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   overflow: auto;
   background-color: #FAFAFA;
 }
 
-
-#skills-right{
-  display: flex;
-  flex-wrap: wrap;
-  overflow: auto;
-  align-content: flex-start;
-  flex: 1;
-}
 .img-responsive{
-   flex: 1;
    width:auto;
    height: auto;
    max-width: 30vw;
    min-width: 10vw;
    max-height: 90vh;
    min-height: 30vh;
-   transition: height 0.66s ease-out;
 }
 .skills-description{
   font-size: 3vmin;
@@ -56,8 +42,10 @@
    display: flex;
    flex-wrap: wrap;
    overflow: auto;
-   align-content: flex-start;
-   margin: 1.25vmin;
+   margin: 1.5vmin;
+}
+.progress-bar {
+  height: 100%;
 }
 #projects {
   padding-top: 8vh;
@@ -73,9 +61,7 @@
   margin: 0 auto;
   
 }
-.project-title{
-  z-index: 1;
-}
+
 #agr{
   background-image: url(./../images/agr.png);
   background-size: cover;
@@ -93,44 +79,9 @@
   margin: 0 auto;
 }
 
-input[type=text], select, textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */ 
-  border: 1px solid #dcdcdc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-input[type=submit] {
-  background-color: #4CAF50;
-  color: #dcdcdc;
-  padding: 12px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-input[type=submit]:hover {
-  background-color: #45a049;
-}
-
-.container-contact {
-  width: 50%;
-  margin: 0 auto;
-}
-
 #contact{
   padding-top: 8vh;
   height: 108vh;
   background-image: url(./../images/Vancouver.jpg);
   background-size: cover;
 }
- .recaptcha {
-   transform: scale(0.77);
-   -webkit-transform: scale(0.77);
-   transform-origin: 0 0;
-   -webkit-transform-origin: 0 0;
- }

@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import "./css/App.css";
 import Body from "./Components/Body";
 import Header from "./Components/Header";
 import * as firebase from "firebase";
