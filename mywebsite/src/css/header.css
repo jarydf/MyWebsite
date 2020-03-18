@@ -7,7 +7,7 @@ header ul {
     position:fixed;
     width: 100vw!important;
     z-index: 1;
-    font-size: 1.25vw;
+    font-size: 2.7vmin;
   }
   
   header li {
@@ -25,11 +25,7 @@ header ul {
   header li a:hover {
     background-color: #111111;
   }
-  h1{
-    text-align: center;
-    color:#111111;
-    padding-top: 25vh;
-  }
+
   #linkedin{
     margin: 0.5vh;
     margin-right: 5vh;
