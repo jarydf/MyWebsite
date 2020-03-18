@@ -124,7 +124,7 @@ input[type=submit]:hover {
 #contact{
   padding-top: 8vh;
   height: 108vh;
-  background-image: url(./../images/Vancouver2.jpg);
+  background-image: url(./../images/Vancouver.jpg);
   background-size: cover;
 }
  .recaptcha {
