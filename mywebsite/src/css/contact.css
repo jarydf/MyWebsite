@@ -1,33 +1,35 @@
 #contact-form {
-    padding: 25px;
+    padding: 5vmin;
     margin: 3vh;
     background-color: #fafafa;
 }
 
 fieldset {
     border: medium none !important;
-    margin: 0 0 10px;
+    margin: 0 0 2vmin;
     min-width: 100%;
     padding: 0;
     width: 100%;
 }
 
 #contact-form input[type="text"],
-#contact-form input[type="email"],
-#contact-form input[type="tel"],
-#contact-form input[type="url"],
+#contact-form input[type="email"]{
+    width: 100%;
+    border: 1px solid #CCC;
+    background: #FFF;
+    margin: 0 0 1vmin;
+    padding: 1vmin;
+}
 #contact-form textarea {
     width: 100%;
     border: 1px solid #CCC;
     background: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
+    margin: 0 0 2vmin;
+    padding: 2vmin;
 }
 
 #contact-form input[type="text"]:hover,
 #contact-form input[type="email"]:hover,
-#contact-form input[type="tel"]:hover,
-#contact-form input[type="url"]:hover,
 #contact-form textarea:hover {
     -webkit-transition: border-color 0.3s ease-in-out;
     -moz-transition: border-color 0.3s ease-in-out;
@@ -36,7 +38,7 @@ fieldset {
 }
 
 #contact-form textarea {
-    height: 100px;
+    height: 20vh;
     max-width: 100%;
     resize: none;
 }
@@ -47,9 +49,9 @@ fieldset {
     border: none;
     background: #0CF;
     color: #FFF;
-    margin: 0 0 5px;
-    padding: 10px;
-    font-size: 15px;
+    margin: 0 0 3vmin;
+    padding: 2vmin;
+    font-size: 2.5vmin;
 }
 
 #contact-form button[type="submit"]:hover {
@@ -63,12 +65,12 @@ fieldset {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 #container-contact {
-    width: 50%;
+    width: 60%;
     margin: 0 auto;
 }
  .recaptcha {
-     transform: scale(0.77);
-     -webkit-transform: scale(0.77);
+     transform: scale(0.80);
+     -webkit-transform: scale(0.80);
      transform-origin: 0 0;
      -webkit-transform-origin: 0 0;
  }
