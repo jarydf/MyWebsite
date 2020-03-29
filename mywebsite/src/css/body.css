@@ -1,5 +1,5 @@
 #badge {
-  font-size: 9vmin;
+  font-size: 5.2rem;
 }
 #title {
   background-image: url(./../images/Background.jpg);
@@ -14,7 +14,7 @@
 }
 
 .about-description{
-  font-size: 3vmin;
+  font-size: 1.7rem;
 }
 .row{
   width: 100%;
@@ -41,7 +41,7 @@
   align-items: center;
 }
 .skills-description{
-  font-size: 3vmin;
+  font-size: 1.8rem;
 }
 .progress{
    display: flex;
@@ -51,7 +51,7 @@
 }
 .progress-bar {
   height: 100%;
-  font-size: 2.4vmin;
+  font-size: 1.2rem;
 }
 #projects {
   padding-top: 8vh;
