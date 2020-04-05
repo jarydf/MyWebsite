@@ -51,7 +51,7 @@ fieldset {
     color: #FFF;
     margin: 0 0 3vmin;
     padding: 2vmin;
-    font-size: 1.7rem;
+    font-size: 1em;
 }
 
 #contact-form button[type="submit"]:hover {
