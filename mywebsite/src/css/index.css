@@ -10,9 +10,9 @@ body{
 }
 section {
   height:auto;
-  min-height: 100vh;
-  max-height: 250vh;
-  width: 100%;
+  min-height: 625px;
+  max-height: 2000px;
+  width: 100% !important;
 }
 header {
   font-family: 'Open Sans';
