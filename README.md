@@ -1,2 +1,0 @@
-# MyWebsite
-website for resume 
