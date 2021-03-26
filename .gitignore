@@ -64,3 +64,5 @@ typings/
 
 # Yarn Integrity file
 .yarn-integrity
+
+src/Config.js
